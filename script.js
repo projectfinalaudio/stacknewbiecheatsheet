@@ -1,19 +1,9 @@
-/* Set the width of the side navigation 
-to 250px and the left margin of the page 
-content to 250px and add a black background color to body */
+/* Open the sidenav */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-    console.log("side navigation opened!");
-  }
-  
-  /* Set the width of the side navigation 
-  to 0 and the left margin of the page 
-  content to 0, and the background color of body to white */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "rgba(255, 243, 73, 0.6)";
-    console.log("side navigation closed!");
-  } 
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
