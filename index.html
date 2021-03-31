@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+
+<style>
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+        'Trebuchet MS', sans-serif;
+       
+         animation: bgColorChange 10s infinite;
+    }
+
+    @keyframes bgColorChange {
+        from { background-image: 
+        linear-gradient(to right, rgba(255, 243, 73, 0.6),
+         rgba(255, 236, 70, 0.85));}
+        to { background-image: 
+        linear-gradient(to right, rgba(255, 240, 32, 0.6),
+         rgba(255, 240, 110, 0.85));}
+}
+
+    .container {
+         font-family: 'Gill Sans', 
+         'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .content {
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 3px 3px 4px rgb(73, 73, 73, 0.65);
+        max-width: 500px;
+        margin: auto;
+        background: rgb(0, 0, 0);
+        color: yellow;
+        padding: 10px;
+    }
+
+    .content-2 {
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 3px 3px 4px rgb(73, 73, 73, 0.65);
+        max-width: 500px;
+        margin: auto;
+        background: rgb(0, 0, 0);
+        color: rgb(252, 252, 88);
+        padding: 10px;
+    }
+
+    h1 {
+        align-items: center;
+      
+    }
+
+    p, pre {
+        font-size: large;
+        letter-spacing: 3px;
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 3px 3px 4px rgb(73, 73, 73, 0.65);
+        max-width: 500px;
+        margin: auto;
+        background: rgb(0, 0, 0);
+        color: rgb(252, 252, 88);
+        padding: 10px;
+    }
+
+    #par-1 {
+        font-weight: bold;
+        letter-spacing: 30px;
+        font-size:larger;
+    }
+
+    #par-2 {
+        font-weight: bold;
+        letter-spacing: 30px;
+        font-size: x-large;
+    }
+
+    #par-3 {
+        font-weight: bold;
+        letter-spacing: 30px;
+        font-size: x-large;
+    }
+
+    #par-4 {
+        font-weight: bold;
+        letter-spacing: 30px;
+        font-size: x-large;
+    }
+
+
+</style>
+
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JS</a>
+      </div>
+
+    <div id="main">
+        
+        <div class="container">
+
+            <span style="position: fixed; font-size:30px;cursor:pointer;" 
+            onclick="openNav()">&#9776;</span>
+
+            <div class="content">
+
+                <p id="par-1"></p>
+                        
+                <script>
+                    document.getElementById("par-1").innerHTML = 
+                    "STACK NEWBIE CHEAT SHEET";
+
+                
+                </script>
+            </div>
+
+            <br>
+
+            <div class="content-2">
+
+                <p id="par-2"></p>
+                
+                <script>
+                    document.getElementById("par-2").innerHTML = 
+                    "HTML"
+
+                </script>
+        
+            </div>
+
+            <br>
+
+            <p>
+                <em>Special</em> HTML characters:     
+            </p>
+
+            <br>
+
+            <p>
+                &copy; &amp; &quot; &frasl; &it; &gt; &pound; 
+                &yen; &reg; &trade;      
+            </p>
+
+            <br>
+
+
+                <p>
+                    COMMON HTML TAGS(Text):      
+                </p>
+
+                <br>
+
+            
+                <!--HEADER TAGS-->
+                <p>&lt;h1&gt;These are <strong>Header</strong> tags&lt;/h1&gt;</p>
+
+                <br>
+
+                <pre><strong>They range from h1 - h6</strong></pre>
+
+                <br>
+                <!--PARAGRAPH TAGS-->
+                <p>&lt;p&gt;These are <strong>paragraph</strong> tags&lt;/p&gt;</p>
+
+                <br>
+
+                <p>&lt;p align="left"&gt;Paragraph align left, right, center tags&lt;/p&gt;</p>
+
+                <br>
+
+                <!--PREFORMATTED TAGS-->
+                <p>&lt;pre&gt;These are <em>preformatted</em> text tags, 
+                    they allow indenting of HTML&lt;/pre&gt;</p>
+
+                <br>
+                <!--CITE TAGS-->
+                <p>&lt;cite&gt;These tags define the <cite>Title</cite>
+                    of a creative piece of work like art or music&lt;/cite&gt;</p>
+
+                <br>
+                <!--S/ STRIKETHROUGH/ DEL TAGS-->
+                <p>&lt;s&gt;These tags <s>strike</s> 
+                    through text(deprecated: use &lt;del&gt; instead)&lt;/s&gt;</p>
+
+                <br>
+
+                <p>&lt;strong&gt;<em>strong</em> tags are used to 
+                    <strong>emphasize</strong> text&lt;/strong&gt;</p>
+
+                <br>
+                
+                <p>&lt;em&gt;<em>em</em> tags <strong> text</strong>&lt;/u&gt;</p>
+
+                <br>
+
+                <p>&lt;u&gt;<em>u</em> tags underline text&lt;/u&gt;</p>
+
+                <br>
+
+                <!--LINKING-->
+                <div class="content">
+                    <h2 style="letter-spacing: 4px;">LINKING: </h2>
+                </div>
+
+                <br>
+
+                <p><strong>href</strong> specifies the <em>URL</em> of the page the link points to </p>
+                
+                <br>
+
+                <!--EXAMPLES-->
+                <div class="content">
+                    <h3 style="letter-spacing: 4px;">EXAMPLES: </h3>
+                </div>
+
+                <br>
+
+                <p>&lt;a href="<em>URL</em>"&gt;&lt/a&gt;</p>
+                
+                <br>
+
+                <p>&lt;a href="<em>mailto:EMAIL</em>"&gt;&lt/a&gt;</p>
+                
+                <br>
+
+                <p>&lt;a name="<em>target</em>"&gt;&lt/a&gt;  
+                (Target anchor within a document)</p>
+                
+                <br>
+
+                <p>&lt;a href="<em>#target</em>"&gt;&lt/a&gt;
+                (Links to anchor within a document)</p>
+                
+                <br>
+
+                <p>&lt;a href="<em>URL</em>" target="_blank"&gt;&lt/a&gt; (This opens
+                the link in a <strong>new window</strong>)</p>
+                
+                <br>
+
+                <!--FORMATTING-->
+                <div class="content">
+                    <h3 style="letter-spacing: 4px;">FORMATTING: </h3>
+                </div>
+
+                <br>
+
+                <p>&lt;br&gt; Inserts a line break</p>
+                
+                <br>
+
+                <p>&lt;ul&gt; Creates <strong>bulleted</strong> list&lt;/ul&gt;</p>
+                
+                <br>
+
+                <p>&#60ol&#62 Creates <strong>numbered</strong> list&#60;/ol&#62;</p>
+                
+                <br>
+
+                <p>&lt;li&gt; Creates a <strong>list item</strong>&lt;/li&gt;</p>
+                
+                <br>
+
+                <p>&lt;span&gt;This is an inline container for phrasing content.
+                    It can be used to group elements for styling purposes
+                    (using the class or id attributes)&lt;/span&gt;</p>
+                
+                <br>
+
+                <p>&lt;div align="left"&gt; Creates a block that is aligned to the left of the document&lt;/div&gt;</p>
+                
+                <br>
+
+                <p>&lt;blockquote&gt; These tags <strong>indent</strong> text&lt;/blockquote&gt;</p>
+                
+                <br>
+
+                <p>&lt;img src="<em>URL</em>"/&gt; Specifies the URL for a given <strong>image</strong></p>
+                
+                <br>
+
+        </div>
+        
+    </div>
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
