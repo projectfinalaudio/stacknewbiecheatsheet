@@ -12,6 +12,50 @@
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
+
+
+  .nav {
+    top: 0;
+    left: 0;
+    background-color: rgba(238, 220, 60, 0.98); 
+    box-shadow: 3px 12px 9px 12px rgba(0, 0, 0, 0.65);
+
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .nav ul li {
+    display: inline-block;
+
+  }
+
+  
+
+  .heading {
+    color: rgba(255, 236, 70, 0.85); 
+    letter-spacing: 3px; 
+    text-shadow: 1px 3px 9px rgba(255, 236, 70, .5);
+
+  }
+
+  .nav ul li a {
+    color: #111;  
+    font-size: 24px;
+    padding: 12px;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav ul li a:hover {
+    text-decoration: underline;
+    font-size: 24.2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  }
   
   /* The navigation menu links */
   .sidenav a {

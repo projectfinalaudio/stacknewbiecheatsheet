@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <title>Document</title>
+    <title>Cheat sheet:html</title>
 </head>
 
 <style>
@@ -26,6 +26,11 @@
          rgba(255, 240, 110, 0.85));}
 }
 
+
+    #main {
+        margin-top: 54px;
+    }
+
     .container {
          font-family: 'Gill Sans', 
          'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,7 +39,7 @@
     .content {
         text-align: center;
         border-radius: 7px;
-        box-shadow: 3px 3px 4px rgb(73, 73, 73, 0.65);
+        box-shadow: 3px 6px 12px 6px rgba(0, 0, 0, 0.65);
         max-width: 500px;
         margin: auto;
         background: rgb(0, 0, 0);
@@ -111,44 +116,48 @@
 
 <body>
 
-    <div id="mySidenav" class="sidenav">
+
+    <div id="nav" class="nav">
+        <ul>
+            <li><a href="index.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">About</a>
         <a href="#">HTML</a>
         <a href="#">CSS</a>
         <a href="#">JS</a>
-      </div>
+      </div> -->
+
+
 
     <div id="main">
         
         <div class="container">
 
-            <span style="position: fixed; font-size:30px;cursor:pointer;" 
-            onclick="openNav()">&#9776;</span>
+            <!-- <span style="position: fixed; font-size:30px;cursor:pointer;" 
+            onclick="openNav()">&#9776;</span> -->
 
             <div class="content">
 
-                <p id="par-1"></p>
+                <h1 class="heading">STACK NEWBIE</h1>
                         
-                <script>
-                    document.getElementById("par-1").innerHTML = 
-                    "STACK NEWBIE CHEAT SHEET";
-
-                
-                </script>
             </div>
 
             <br>
 
             <div class="content-2">
 
-                <p id="par-2"></p>
+                <h2 class="heading">
+                    HTML
+                </h2>
                 
-                <script>
-                    document.getElementById("par-2").innerHTML = 
-                    "HTML"
-
-                </script>
         
             </div>
 
@@ -168,7 +177,7 @@
             <br>
 
 
-                <p>
+                <p class="heading">
                     COMMON HTML TAGS(Text):      
                 </p>
 
@@ -223,7 +232,7 @@
 
 <!--LINKING-->
                 <div class="content">
-                    <h2 style="letter-spacing: 4px;">LINKING: </h2>
+                    <h2 class="heading" style="letter-spacing: 4px;">LINKING: </h2>
                 </div>
 
                 <br>
@@ -234,7 +243,7 @@
 
 <!--EXAMPLES-->
                 <div class="content">
-                    <h3 style="letter-spacing: 4px;">EXAMPLES: </h3>
+                    <h3 class="heading" style="letter-spacing: 4px;">EXAMPLES: </h3>
                 </div>
 
                 <br>
@@ -264,7 +273,7 @@
 
 <!--FORMATTING-->
                 <div class="content">
-                    <h3 style="letter-spacing: 4px;">FORMATTING: </h3>
+                    <h3 class="heading" style="letter-spacing: 4px;">FORMATTING: </h3>
                 </div>
 
                 <br>
@@ -327,7 +336,7 @@
 <!--TABLES-->
 
                 <div class="content">
-                <h2 style="letter-spacing: 3px;">TABLES:</h2>
+                <h2 class="heading" style="letter-spacing: 3px;">TABLES:</h2>
                 </div>
 
                 <br>
@@ -365,8 +374,8 @@
                 <br>
 
                 <div class="content">
-                    <h3 style="letter-spacing: 3px; color: rgb(211, 223, 46); ">
-                        "Table Styling:"<hr style="color: rgb(211, 223, 46); max-width: 175px;"></h3>
+                    <h3 class="heading" style="letter-spacing: 3px; color: rgb(211, 223, 46); ">
+                        Table Styling:</h3>
                 </div>
 
                 <br>
@@ -415,7 +424,8 @@
 
 
 
-
+                   <br>
+                   <h2 style="text-align: center; color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">GMedia2021&#169;</h2>
         </div>
         
     </div>
